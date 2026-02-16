@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <form action="submit.html">
+        <!-- Koppla ihop label med input genom ID och FOR-->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br>
+        <label for="number">Amount</label>
+        <input type="number" id="number" name="amount">
+        <br>
+
+        <input type="radio" name="gender"> Man
+        <input type="radio" name="gender"> Woman
+        <input type="radio" name="gender"> Other
+        <br>
+
+        <label for="human">Is human</label>
+        <input type="checkbox" name="human" value="yes" id="human">
+
+        <br>
+        <label for="hidden">Gömd för användaren</label>
+        <input type="hidden" name="userid" id="hidden">
+
+        <br>
+        <input type="range" name="volume" min="0" max="100" step="5" id="">
+
+        <br>
+        <input type="datetime-local" name="booking" min="2026-02-11" max="2027-02-11">
+
+        <br>
+        <input type="color">
+        <br>
+        <input type="file" name="document">
+
+        <br>
+        <label for="message">Message</label>
+        <textarea name="message" id="message">Write message</textarea>
+        <br>
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+        </select><br>
+        <button>Skicka</button>
+    </form>
+</body>
+</html>
